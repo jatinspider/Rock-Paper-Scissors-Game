@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document one</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button onclick="console.log(`total items : ${cartquantitity}`)">
+      Show cart
+    </button>
+
+    <button
+      onclick="
+    if (cartquantitity >=10) 
+      {
+        alert('cart is full')
+      }
+      else 
+    cartquantitity++;
+    console.log(`total items :${cartquantitity}`)"
+    >
+      Add to cart
+    </button>
+
+    <button
+      onclick="
+      if (cartquantitity >=10) 
+      {
+        alert('cart is full')
+      }
+      else 
+    cartquantitity+=3;
+    console.log(`total items :${cartquantitity}`)"
+    >
+      +3
+    </button>
+
+    <button
+      onclick="
+    cartquantitity=0;
+    console.log(`total items :${cartquantitity}`)"
+    >
+      Reset
+    </button>
+    <br /><br />
+    <button onclick="display+=1">1</button>
+    <button onclick="display+=2">2</button>
+    <button onclick="console.log(eval(display))">=</button>
+    <button onclick="display+='+'">+</button>
+    <button onclick="display+='-'">-</button>
+    <button onclick="display=''">Clear</button>
+<p>
+  <button class="btn">new button</button>
+</p>
+<p>
+  <button class="sub_button" onclick="Subscribe();
+  ">Subscribe</button>
+</p>
+<p>shipping calculator</p>
+<p>for items under $40 shiping + $10</p>
+<p>for items ABOVE $40 shipping free</p>
+
+<input class="amount" type="text" placeholder="cart amount" onkeydown="
+if(event.key=='Enter'){
+shipping()
+}">
+<button class="check" onclick="shipping()">check</button>
+<p class="total"></p>
+
+<p>
+  <button onclick="document.querySelector('.head_tails').innerHTML='You selected : Heads';">heads</button>
+  <button onclick="document.querySelector('.head_tails').innerHTML='You selected : Tails';">tails</button>
+</p>
+<p class="head_tails"></p>
+<input type="text" id="text" placeholder="enter text" onkeyup="
+ document.querySelector('.typed')
+          .innerHTML = text.value;">
+          <p class="typed"></p>
+<script src="script.js"></script>
+  </body>
+</html>
+ 
